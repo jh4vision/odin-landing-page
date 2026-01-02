@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    font-family: Roboto, sans-serif;
-    box-sizing: border-box;
-    color: #ffffff;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
-
-}
-
-
-/* common setting */
+/* Reset & Common Settings */
 * {
     box-sizing: border-box;
 }
@@ -24,6 +10,17 @@ h1,
 h2 {
     padding: 0;
     margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 header,
@@ -211,7 +208,13 @@ header a {
     padding-bottom: 24px;
 }
 
-#quote h2 {
+#quote blockquote {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#quote blockquote p {
     font-style: italic;
     font-size: 2rem;
     font-weight: 300;
@@ -219,14 +222,16 @@ header a {
     margin: 0;
 }
 
-#quote .name {
+#quote cite {
+    display: block;
     width: 100%;
     text-align: right;
     font-size: 1rem;
+    font-style: normal;
     padding-right: 1rem;
     color: #1F2937;
     font-weight: 600;
-    margin: 16px;
+    margin-top: 16px;
 }
 
 /* call to action */
@@ -274,7 +279,7 @@ header a {
     padding: 6px 20px;
     text-align: center;
     border-radius: 8px;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
     box-shadow: none;
 }
 
